@@ -21,6 +21,8 @@
   "dependencies": {
     "@headlessui/vue": "latest",
     "@heroicons/vue": "^2.1.1",
-    "@vueuse/core": "^10.7.0"
+    "@vueuse/core": "^10.7.0",
+    "aos": "^2.3.4",
+    "vanilla-tilt-vue": "^0.1.3"
   }
 }
