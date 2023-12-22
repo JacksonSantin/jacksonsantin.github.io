@@ -3,6 +3,7 @@
   <About />
   <Skills />
   <Projects />
+  <Graduation />
 </template>
 
 <script setup>

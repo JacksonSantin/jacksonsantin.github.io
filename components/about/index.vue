@@ -1,17 +1,17 @@
 <template>
   <div
-    class="mx-auto flex flex-col max-w-7xl lg:flex-row items-center justify-between p-6 lg:px-8 my-10"
+    class="h-screen mx-auto flex flex-col max-w-7xl lg:flex-row items-center justify-between p-6 lg:px-8"
   >
     <section id="sobre" class="lg:w-1/2 grid xl:grid-rows-3 p-6 lg:px-8">
       <h1
         class="text-3xl font-bold tracking-tight text-gray-700 dark:text-gray-300 sm:text-4xl"
       >
-        <span class="text-green-600">Olá pessoal!</span> <br />
+        <span class="text-green-600">{{ $t("hello") }}</span> <br />
         Eu sou Jackson Dhanyel <span class="text-green-600">Santin</span>
       </h1>
       <p class="mt-6 text-lg leading-8 text-gray-700 dark:text-gray-300">
         Formado em análise e desenvolvimento de sistema, <br />
-        Atuo como desenvolvedor web front-end há mais de 6 anos.
+        atuo como desenvolvedor web front-end há mais de 6 anos.
       </p>
       <div class="mt-10 flex items-center justify-start gap-x-6">
         <nuxt-link
