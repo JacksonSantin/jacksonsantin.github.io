@@ -1,5 +1,5 @@
 <template>
-  <header class="bg-gray-50 dark:bg-neutral-900">
+  <header class="bg-gray-50 dark:bg-neutral-900 lg:fixed top-0 left-0 right-0 z-10">
     <nav
       class="mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-8"
       aria-label="Global"
@@ -17,8 +17,8 @@
           v-model="locale"
           class="h-full rounded-md border-0 py-1.5 pl-4 pr-9 ring-1 ring-inset dark:bg-neutral-900 dark:text-gray-300 dark:ring-neutral-800 dark:focus:ring-neutral-800 ring-gray-300 outline-0 focus:ring-gray-300 text-gray-400 bg-gray-50 shadow-sm sm:max-w-xs sm:text-sm sm:leading-6"
         >
-          <option value="pt">PT</option>
-          <option value="en">US</option>
+          <option value="pt">Português</option>
+          <option value="en">Inglês</option>
         </select>
         <NuxtLink
           class="-m-1.5 p-2.5 cursor-pointer rounded-full dark:hover:bg-neutral-800 hover:bg-slate-100 dark:text-gray-300 text-gray-700"
