@@ -6,6 +6,7 @@
   <Graduation />
   <Experience />
   <Contact />
+  <Footer />
 </template>
 
 <script setup>

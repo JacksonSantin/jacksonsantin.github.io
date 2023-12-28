@@ -2,12 +2,12 @@
   <div
     class="h-screen mx-auto flex flex-col max-w-7xl lg:flex-row items-center justify-between p-6 lg:px-8"
   >
-    <section class="lg:w-1/3 p-6 lg:px-8">
+    <section class="hidden lg:flex lg:w-1/3 p-6 lg:px-8" data-aos="fade-right">
       <client-only>
         <Vue3Lottie :animation-data="ContactJSON" />
       </client-only>
     </section>
-    <section id="contato" class="lg:w-1/2 grid" data-aos="zoom-in">
+    <section id="contato" class="lg:w-1/2 grid" data-aos="fade-left">
       <h1
         class="text-3xl font-bold tracking-tight text-green-500 sm:text-4xl mb-5"
       >
@@ -144,7 +144,7 @@ export default {
         )
         .then(
           () => {
-            // this.$swal("Obrigado :)", "Mensagem enviada com sucesso!", "success");
+            this.$swal("Obrigado :)", "Mensagem enviada com sucesso!", "success");
             console.log("Mensagem enviada com sucesso!");
           },
           () => {
