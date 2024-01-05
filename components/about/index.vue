@@ -7,17 +7,17 @@
         class="text-3xl font-bold tracking-tight text-gray-700 dark:text-gray-300 sm:text-4xl"
       >
         <span class="text-green-600">{{ $t("hello") }}</span> <br />
-        Eu sou Jackson Dhanyel <span class="text-green-600">Santin</span>
+        {{ $t("text01") }} Jackson Dhanyel <span class="text-green-600">Santin</span>
       </h1>
       <p class="mt-6 text-lg leading-8 text-gray-700 dark:text-gray-300">
-        Formado em análise e desenvolvimento de sistema, <br />
-        atuo como desenvolvedor web front-end há mais de 6 anos.
+        {{ $t("text02") }}, <br />
+        {{ $t("text03") }}.
       </p>
       <div class="mt-10 flex items-center justify-start gap-x-6">
         <nuxt-link
           href="#contato"
           class="rounded-md bg-green-500 px-3.5 py-2.5 text-sm font-semibold tracking-[.10em] text-white shadow-sm hover:bg-green-600 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2"
-          >Contate-me</nuxt-link
+          >{{ $t("text04") }}</nuxt-link
         >
       </div>
     </section>

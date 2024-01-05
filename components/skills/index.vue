@@ -7,7 +7,7 @@
     <h1
       class="text-3xl font-bold tracking-tight text-green-500 sm:text-4xl mb-5"
     >
-      Minhas Skills
+      {{ $t("text05") }}
     </h1>
     <div
       class="flex flex-wrap justify-center lg:justify-between gap-6 lg:gap-6"

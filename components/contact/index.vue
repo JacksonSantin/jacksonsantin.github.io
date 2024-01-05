@@ -1,5 +1,5 @@
 <template>
-  <div
+  <section
     class="h-screen mx-auto flex flex-col max-w-7xl lg:flex-row items-center justify-between p-6 lg:px-8"
   >
     <section class="hidden lg:flex lg:w-1/3 p-6 lg:px-8" data-aos="fade-right">
@@ -11,7 +11,7 @@
       <h1
         class="text-3xl font-bold tracking-tight text-green-500 sm:text-4xl mb-5"
       >
-        Contato
+        {{ $t("text20") }}
       </h1>
       <div class="grid grid-col-6">
         <form ref="form" @submit.prevent="sendEmail">
@@ -24,7 +24,7 @@
                   <label
                     for="name"
                     class="block text-sm font-medium leading-6 dark:text-white text-gray-900"
-                    >Nome</label
+                    >{{ $t("text21") }}</label
                   >
                   <div class="mt-2">
                     <input
@@ -40,7 +40,7 @@
                   <label
                     for="email"
                     class="block text-sm font-medium leading-6 dark:text-white text-gray-900"
-                    >E-mail</label
+                    >{{ $t("text22") }}</label
                   >
                   <div class="mt-2">
                     <input
@@ -56,7 +56,7 @@
                   <label
                     for="phone"
                     class="block text-sm font-medium leading-6 dark:text-white text-gray-900"
-                    >Telefone</label
+                    >{{ $t("text23") }}</label
                   >
                   <div class="mt-2">
                     <input
@@ -64,6 +64,8 @@
                       name="phone"
                       id="phone"
                       class="block w-full rounded-md border-0 py-1.5 px-2.5 dark:text-white text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset outline-0 focus:ring-green-600 sm:text-sm sm:leading-6"
+                      data-maska="['(##) ####-####', '(##) #####-####']"
+                      v-maska
                     />
                   </div>
                 </div>
@@ -72,7 +74,7 @@
                   <label
                     for="company"
                     class="block text-sm font-medium leading-6 dark:text-white text-gray-900"
-                    >Empresa</label
+                    >{{ $t("text24") }}</label
                   >
                   <div class="mt-2">
                     <input
@@ -88,7 +90,7 @@
                   <label
                     for="message"
                     class="block text-sm font-medium leading-6 dark:text-white text-gray-900"
-                    >Mensagem</label
+                    >{{ $t("text25") }}</label
                   >
                   <div class="mt-2">
                     <textarea
@@ -108,19 +110,21 @@
               type="submit"
               class="rounded-md bg-green-500 px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-green-600 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-green-600"
             >
-              Enviar
+              {{ $t("text26") }}
             </button>
           </div>
         </form>
       </div>
     </section>
-  </div>
+  </section>
 </template>
 
 <script setup>
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { Vue3Lottie } from "vue3-lottie";
+import Swal from "sweetalert2";
+import { vMaska } from "maska"
 import ContactJSON from "../../assets/images/lotties/contact.json";
 
 onMounted(() => {
@@ -143,26 +147,23 @@ export default {
           "user_0VFYQ4JjMn4RkCcdx9GRB"
         )
         .then(
-          () => {
-            this.$swal("Obrigado :)", "Mensagem enviada com sucesso!", "success");
-            console.log("Mensagem enviada com sucesso!");
+          async () => {
+            await Swal.fire({
+              title: "Obrigado :)",
+              text: "Mensagem enviada com sucesso!",
+              icon: "success",
+            });
+            window.location.reload();
           },
           () => {
-            // this.$swal(
-            //   "Oops :(",
-            //   "Mensagem não enviada, tente novamente!",
-            //   "error"
-            // );
-            console.log("Erro ao enviar mensagem!");
+            Swal.fire({
+              title: "Oops :(",
+              text: "Mensagem não enviada, tente novamente!",
+              icon: "error",
+            });
           }
         );
     },
   },
 };
 </script>
-
-<style scoped>
-section {
-  margin-top: 14rem;
-}
-</style>

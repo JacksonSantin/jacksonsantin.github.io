@@ -7,7 +7,7 @@
     <h1
       class="text-3xl font-bold tracking-tight text-green-500 sm:text-4xl mb-5"
     >
-      Meu Portfólio
+      {{ $t("text06") }}
     </h1>
     <div
       class="flex flex-wrap justify-center lg:justify-between gap-6 lg:gap-5"
@@ -36,7 +36,7 @@
             alt="Contato"
           />
           <span class="dark:text-gray-200 font-extrabold"
-            >Landing Page Contato</span
+            >{{ $t("text07") }}</span
           >
         </div>
       </nuxt-link>
@@ -69,7 +69,7 @@
             class="w-48 lg:w-80 mb-5"
             alt="CEP"
           />
-          <span class="dark:text-gray-200 font-extrabold">Busca CEP</span>
+          <span class="dark:text-gray-200 font-extrabold">{{ $t("text08") }}</span>
         </div>
       </nuxt-link>
       <nuxt-link
@@ -84,7 +84,7 @@
             class="w-48 lg:w-80 mb-5"
             alt="Fipe"
           />
-          <span class="dark:text-gray-200 font-extrabold">Consulta Fipe</span>
+          <span class="dark:text-gray-200 font-extrabold">{{ $t("text09") }}</span>
         </div>
       </nuxt-link>
       <nuxt-link

@@ -5,8 +5,7 @@
     >
       <section class="lg:w-2/3 p-6 lg:px-8">
         <span class="text-neutral-500 dark:text-gray-300"
-          >© {{ currentYear }} Jackson Dhanyel Santin. Todos os direitos
-          reservados.</span
+          >© {{ currentYear }} Jackson Dhanyel Santin. {{ $t("text27") }}.</span
         >
       </section>
       <section id="contato" class="lg:w-2/2 grid">

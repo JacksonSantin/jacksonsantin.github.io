@@ -7,7 +7,7 @@
     <h1
       class="text-3xl font-bold tracking-tight text-green-500 sm:text-4xl mb-5"
     >
-      Experiências Profissionais
+      {{ $t("text16") }}
     </h1>
     <div class="flex flex-wrap justify-center lg:justify-between gap-6">
       <div
@@ -15,7 +15,7 @@
       >
         <span class="dark:text-gray-200 font-extrabold">Dev Front-end</span>
         <img :src="DeveloperJSON" alt="Developer" class="w-40 rounded-md" />
-        <span class="dark:text-gray-200 font-extrabold">2022 - atual</span>
+        <span class="dark:text-gray-200 font-extrabold">2022 - {{ $t("text17") }}</span>
         <span class="dark:text-gray-200 font-extrabold"
           >CGI Software de Gestão</span
         >
@@ -33,7 +33,7 @@
       <div
         class="flex flex-col items-center justify-between text-center rounded-lg border-8 border-green-600 shadow-lg shadow-green-500/50 dark:bg-neutral-900 bg-gray-50 p-5 hover:scale-105 transition duration-700 h-80 w-80"
       >
-        <span class="dark:text-gray-200 font-extrabold">Suporte</span>
+        <span class="dark:text-gray-200 font-extrabold">{{ $t("text18") }}</span>
         <client-only>
           <Vue3Lottie
             :animation-data="SupportJSON"
@@ -49,7 +49,7 @@
       <div
         class="flex flex-col items-center justify-between text-center rounded-lg border-8 border-green-600 shadow-lg shadow-green-500/50 dark:bg-neutral-900 bg-gray-50 p-5 hover:scale-105 transition duration-700 h-80 w-80"
       >
-        <span class="dark:text-gray-200 font-extrabold">Vendedor</span>
+        <span class="dark:text-gray-200 font-extrabold">{{ $t("text19") }}</span>
         <client-only>
           <Vue3Lottie
             :animation-data="SalesmanJSON"
