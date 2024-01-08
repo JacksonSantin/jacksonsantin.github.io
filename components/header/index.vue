@@ -5,12 +5,12 @@
       aria-label="Global"
     >
       <div class="flex lg:flex-1">
-        <nuxt-link href="#" class="-m-1.5 p-1.5">
+        <NuxtLink to="/" class="-m-1.5 p-1.5">
           <span
             class="text-green-600 dark:text-green-400 font-extrabold drop-shadow-lg"
             >JDS</span
           >
-        </nuxt-link>
+        </NuxtLink>
       </div>
       <div class="hidden lg:flex lg:flex-1 lg:gap-x-6 lg:justify-end">
         <select
