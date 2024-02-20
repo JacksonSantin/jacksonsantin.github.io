@@ -17,11 +17,11 @@
           v-model="locale"
           class="h-full rounded-md border-0 py-1.5 pl-4 pr-9 ring-1 ring-inset dark:bg-neutral-900 dark:text-gray-300 dark:ring-neutral-800 dark:focus:ring-neutral-800 ring-gray-300 outline-0 focus:ring-gray-300 text-gray-400 bg-gray-50 shadow-sm sm:max-w-xs sm:text-sm sm:leading-6"
         >
-          <option value="pt">Português</option>
-          <option value="en">Inglês</option>
+          <option value="pt">{{ $t("text28") }}</option>
+          <option value="en">{{ $t("text29") }}</option>
         </select>
         <NuxtLink
-          class="-m-1.5 p-2.5 cursor-pointer rounded-full dark:hover:bg-neutral-800 hover:bg-slate-100 dark:text-gray-300 text-gray-700"
+          class="p-1.5 cursor-pointer rounded-full dark:hover:bg-neutral-800 hover:bg-slate-100 dark:text-gray-300 text-gray-700"
           @click.prevent="downloadFile"
         >
           <span class="sr-only">Curriculo</span>
@@ -30,7 +30,7 @@
         <button
           v-if="!isDark"
           type="button"
-          class="-m-1.5 p-2.5 rounded-full dark:hover:bg-neutral-800 hover:bg-slate-100 dark:text-gray-300 text-gray-700"
+          class="p-1.5 rounded-full dark:hover:bg-neutral-800 hover:bg-slate-100 dark:text-gray-300 text-gray-700"
           @click="toggleDark()"
         >
           <span class="sr-only">Dark Mode</span>
@@ -39,7 +39,7 @@
         <button
           v-else
           type="button"
-          class="-m-1.5 p-2.5 rounded-full dark:hover:bg-neutral-800 hover:bg-slate-100 dark:text-gray-300 text-gray-700"
+          class="p-1.5 rounded-full dark:hover:bg-neutral-800 hover:bg-slate-100 dark:text-gray-300 text-gray-700"
           @click="toggleDark()"
         >
           <span class="sr-only">Light Mode</span>
@@ -56,7 +56,7 @@
             <option value="en">US</option>
           </select>
           <NuxtLink
-            class="-m-1.5 p-2.5 mr-5 cursor-pointer rounded-full dark:hover:bg-neutral-800 dark:text-gray-300 text-gray-700"
+            class="p-1.5 mr-5 cursor-pointer rounded-full dark:hover:bg-neutral-800 dark:text-gray-300 text-gray-700"
             @click.prevent="downloadFile"
           >
             <span class="sr-only">Curriculo</span>
@@ -65,7 +65,7 @@
           <button
             v-if="!isDark"
             type="button"
-            class="-m-1.5 p-2.5 mr-5 rounded-full dark:hover:bg-neutral-800 dark:text-gray-300 text-gray-700"
+            class="p-1.5 mr-5 rounded-full dark:hover:bg-neutral-800 dark:text-gray-300 text-gray-700"
             @click="toggleDark()"
           >
             <span class="sr-only">Dark Mode</span>
@@ -74,7 +74,7 @@
           <button
             v-else
             type="button"
-            class="-m-1.5 p-2.5 mr-5 rounded-full dark:hover:bg-neutral-800 dark:text-gray-300 text-gray-700"
+            class="p-1.5 mr-5 rounded-full dark:hover:bg-neutral-800 dark:text-gray-300 text-gray-700"
             @click="toggleDark()"
           >
             <span class="sr-only">Light Mode</span>
