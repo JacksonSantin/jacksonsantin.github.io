@@ -65,7 +65,7 @@
           <button
             v-if="!isDark"
             type="button"
-            class="p-1.5 mr-5 rounded-full dark:hover:bg-neutral-800 dark:text-gray-300 text-gray-700"
+            class="p-1.5 rounded-full dark:hover:bg-neutral-800 dark:text-gray-300 text-gray-700"
             @click="toggleDark()"
           >
             <span class="sr-only">Dark Mode</span>
@@ -74,7 +74,7 @@
           <button
             v-else
             type="button"
-            class="p-1.5 mr-5 rounded-full dark:hover:bg-neutral-800 dark:text-gray-300 text-gray-700"
+            class="p-1.5 rounded-full dark:hover:bg-neutral-800 dark:text-gray-300 text-gray-700"
             @click="toggleDark()"
           >
             <span class="sr-only">Light Mode</span>
