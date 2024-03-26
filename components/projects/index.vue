@@ -143,7 +143,7 @@
             class="w-48 lg:w-80 mb-5"
             alt="Brasil API"
           />
-          <span class="dark:text-gray-200 font-extrabold">Brasil API</span>
+          <span class="dark:text-gray-200 font-extrabold">{{ $t("text30") }} API</span>
         </div>
       </nuxt-link>
     </div>
