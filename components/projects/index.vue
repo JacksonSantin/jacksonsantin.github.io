@@ -134,16 +134,16 @@
           >
         </div>
       </nuxt-link>
-      <nuxt-link href="https://mp-orkut-clone-nine.vercel.app/" target="_blank">
+      <nuxt-link href="https://brasil-api-application-web.vercel.app/" target="_blank">
         <div
           class="flex flex-col justify-between text-center rounded-lg dark:bg-neutral-900 bg-gray-50 p-10 lg:px-8 hover:scale-105 transition duration-700 h-80"
         >
           <img
-            src="../../assets/images/projects/orkut.png"
+            src="../../assets/images/projects/brasil-api.png"
             class="w-48 lg:w-80 mb-5"
-            alt="orkut"
+            alt="Brasil API"
           />
-          <span class="dark:text-gray-200 font-extrabold">Orkut</span>
+          <span class="dark:text-gray-200 font-extrabold">Brasil API</span>
         </div>
       </nuxt-link>
     </div>
