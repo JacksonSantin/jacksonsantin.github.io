@@ -26,20 +26,6 @@
           >
         </div>
       </nuxt-link>
-      <nuxt-link href="https://lp-form-contact.vercel.app/" target="_blank">
-        <div
-          class="flex flex-col justify-between text-center rounded-lg dark:bg-neutral-900 bg-gray-50 p-10 lg:px-8 hover:scale-105 transition duration-700 h-80"
-        >
-          <img
-            src="../../assets/images/projects/contact-lp.png"
-            class="w-48 lg:w-80 mb-5"
-            alt="Contato"
-          />
-          <span class="dark:text-gray-200 font-extrabold"
-            >{{ $t("text07") }}</span
-          >
-        </div>
-      </nuxt-link>
       <nuxt-link
         href="https://crypto-currency-page.vercel.app/"
         target="_blank"
@@ -144,6 +130,18 @@
             alt="Brasil API"
           />
           <span class="dark:text-gray-200 font-extrabold">{{ $t("text30") }} API</span>
+        </div>
+      </nuxt-link>
+      <nuxt-link href="https://www.npmjs.com/package/todo-cli-lib" target="_blank">
+        <div
+          class="flex flex-col justify-between text-center rounded-lg dark:bg-neutral-900 bg-gray-50 p-10 lg:px-8 hover:scale-105 transition duration-700 h-80"
+        >
+          <img
+            src="../../assets/images/projects/toDo_cli.png"
+            class="w-48 lg:w-80 mb-5"
+            alt="To-do CLI"
+          />
+          <span class="dark:text-gray-200 font-extrabold">To-do CLI</span>
         </div>
       </nuxt-link>
     </div>
