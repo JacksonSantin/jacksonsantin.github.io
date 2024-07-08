@@ -101,7 +101,7 @@ export default {
   methods: {
     downloadFile() {
       const fileUrl =
-        "https://drive.google.com/uc?export=download&id=17XDAiXKYD11SHfEe7R1utlKHVddzDhYN";
+        "https://drive.google.com/uc?export=download&id=1W2eBx9y0NXr9_E5LDO2Be6OPhY4JThvH";
       const link = document.createElement("a");
       link.href = fileUrl;
       link.download = "curriculo.pdf";
